@@ -31,6 +31,7 @@ This demo illustrates the custom components of HTML5-based ApsaraVideo Player an
 - [Playback speed](https://github.com/aliyunvideo/AliyunPlayer_Web/tree/master/customComponents/src/components/RateComponent)
 - [Definition](https://github.com/aliyunvideo/AliyunPlayer_Web/tree/master/customComponents/src/components/QualityComponent)
 - [Progress marker](https://github.com/aliyunvideo/AliyunPlayer_Web/tree/master/customComponents/src/components/ProgressComponent)
+- [Forward and rewind](https://github.com/aliyunvideo/AliyunPlayer_Web/tree/master/customComponents/src/components/SeekButtonsComponent)
 
 ## Development Guide
 

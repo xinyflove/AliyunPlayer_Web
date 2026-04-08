@@ -34,6 +34,7 @@
 - [字幕组件](https://github.com/aliyunvideo/AliyunPlayer_Web/tree/master/customComponents/src/components/CaptionComponent)
 - [音轨组件](https://github.com/aliyunvideo/AliyunPlayer_Web/tree/master/customComponents/src/components/TrackComponent)
 - [多视频广告](https://github.com/aliyunvideo/AliyunPlayer_Web/tree/master/customComponents/src/components/ManyVideoADComponent)
+- [快进和快退](https://github.com/aliyunvideo/AliyunPlayer_Web/tree/master/customComponents/src/components/SeekButtonsComponent)
 
 
 ## 开发指南

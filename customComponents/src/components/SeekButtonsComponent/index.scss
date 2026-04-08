@@ -1,0 +1,26 @@
+.seek-buttons-components {
+  float: right;
+  color: #fff;
+  height: 35px;
+  position: relative;
+  box-sizing: border-box;
+  margin-top: 5px;
+  margin-right: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  .rewind,
+  .forward {
+    padding: 5px 5px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    user-select: none;
+    opacity: 0.8;
+    transition: opacity 0.3s;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
