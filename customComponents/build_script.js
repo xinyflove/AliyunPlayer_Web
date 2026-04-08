@@ -1,5 +1,36 @@
 const { execSync } = require('child_process');
-const os = require('os');
-const platform = os.platform();
-let args = process.argv[2] === '--dev' ? process.argv.slice(3).concat('--dev') : process.argv.slice(2);
-execSync((platform === 'win32' ? 'build_customize.sh' : './build_customize.sh') + ' ' + args.join(' '), {stdio: 'inherit'}); // for bash script cross-platform run
+const fs = require('fs');
+const path = require('path');
+
+const args = process.argv.slice(2);
+const isDev = args.includes('--dev');
+const componentNames = args.filter(arg => arg !== '--dev' && arg !== 'all');
+
+const npmscript = isDev ? 'build_customize_dev' : 'build_customize';
+
+let buildcommand = [];
+
+if (componentNames.length === 0) {
+  const componentsDir = path.join(__dirname, 'src', 'components');
+  const dirs = fs.readdirSync(componentsDir);
+  
+  dirs.forEach(dir => {
+    const fullPath = path.join(componentsDir, dir);
+    const stat = fs.statSync(fullPath);
+    if (stat.isDirectory() && dir !== 'images') {
+      buildcommand.push(`./src/components/${dir}/export.js`);
+    }
+  });
+} else {
+  componentNames.forEach(name => {
+    const componentDir = `./src/components/${name}Component`;
+    buildcommand.push(`${componentDir}/export.js`);
+  });
+}
+
+buildcommand.push('./src/assets/scss/index.scss');
+
+const command = `npm run ${npmscript} ${buildcommand.join(' ')}`;
+console.log('Running:', command);
+
+execSync(command, { stdio: 'inherit' });
