@@ -1,6 +1,6 @@
 ## Aliplayer H5播放器的自定义组件
 
-其他语言: [English](https://github.com/aliyunvideo/AliyunPlayer_Web/blob/master/customComponents/README.md)
+其他语言: [English](https://github.com/xinyflove/AliyunPlayer_Web/blob/master/customComponents/README.md)
 
 本项目包含Aliplayer H5播放器的自定义组件，可以作为自定义组件如何实现的参考，在这里也可以找到一些常用的自定义组件，包含第三方实现的。
 
@@ -34,7 +34,7 @@
 - [字幕组件](https://github.com/aliyunvideo/AliyunPlayer_Web/tree/master/customComponents/src/components/CaptionComponent)
 - [音轨组件](https://github.com/aliyunvideo/AliyunPlayer_Web/tree/master/customComponents/src/components/TrackComponent)
 - [多视频广告](https://github.com/aliyunvideo/AliyunPlayer_Web/tree/master/customComponents/src/components/ManyVideoADComponent)
-- [快进和快退](https://github.com/aliyunvideo/AliyunPlayer_Web/tree/master/customComponents/src/components/SeekButtonsComponent)
+- [快进和快退](https://github.com/xinyflove/AliyunPlayer_Web/tree/master/customComponents/src/components/SeekButtonsComponent)
 
 
 ## 开发指南

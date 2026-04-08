@@ -1,6 +1,6 @@
 ## Forward and rewind component
 
-Other Languages: [简体中文](https://github.com/aliyunvideo/AliyunPlayer_Web/blob/master/customComponents/src/components/SeekButtonsComponent/README.zh_CN.md)
+Other Languages: [简体中文](https://github.com/xinyflove/AliyunPlayer_Web/blob/master/customComponents/src/components/SeekButtonsComponent/README.zh_CN.md)
 
 Control video fast-forward and rewind by clicking the fast-forward and rewind buttons on the player control panel.
 
